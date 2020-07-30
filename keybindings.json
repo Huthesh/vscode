@@ -1,0 +1,10 @@
+[{
+    "key": "alt+cmd+s",
+    "command": "editor.action.sourceAction",
+    "when": "editorTextFocus"
+},{
+      "key": "cmd+2",
+      "command": "editor.action.refactor",
+      "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  }
+]
