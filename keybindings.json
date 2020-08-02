@@ -1,3 +1,4 @@
+// Place your key bindings in this file to override the defaults
 [{
     "key": "alt+cmd+s",
     "command": "editor.action.sourceAction",
@@ -6,5 +7,31 @@
       "key": "cmd+2",
       "command": "editor.action.refactor",
       "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  }
+},
+{
+    "key": "cmd+f12",
+    "command": "editor.action.goToImplementation",
+    "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+},
+{
+    "key": "cmd+f12",
+    "command": "-editor.action.goToImplementation",
+    "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+},
+{
+    "key": "cmd+f11",
+    "command": "workbench.action.focusActiveEditorGroup"
+},
+{
+    "key": "cmd+f12",
+    "command": "-workbench.action.focusActiveEditorGroup"
+},
+{
+    "key": "shift+cmd+2",
+    "command": "workbench.action.focusSecondEditorGroup"
+},
+{
+    "key": "cmd+2",
+    "command": "-workbench.action.focusSecondEditorGroup"
+}
 ]
